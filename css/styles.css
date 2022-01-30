@@ -542,6 +542,7 @@ ul {
   line-height: 1.71;
 }
 
+.team__scene:hover .team__card,
 .team__scene:hover .team__card {
   transform: rotateY(180deg);
 }
@@ -677,7 +678,8 @@ ul {
   overflow: hidden;
 }
 
-.works-examples__link:hover .work-examples__overlay {
+.works-examples__link:hover .work-examples__overlay,
+.works-examples__link:focus .work-examples__overlay {
   transform: translateY(0);
 }
 
