@@ -68,14 +68,13 @@
           </h1>
           <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
         </div>
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop backdrop--is-hidden" data-modal>
           <div class="modal">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus earum iusto, fuga
-              tempore dolore illo iure, incidunt ducimus voluptas, nemo natus excepturi optio quis
-              necessitatibus?
-            </p>
-            <button data-modal-close>Закрыть</button>
+            <button data-modal-close class="close-btn">
+              <svg class="modal-close-icon">
+                <use href="./images/icons.svg#icon-modal-close"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -143,6 +142,9 @@
                 height="294"
                 class="about-img"
               />
+              <div class="about-list--tumb">
+                <h3 class="about__list--title">Десктопные приложения</h3>
+              </div>
             </li>
             <li class="about__item">
               <img
@@ -152,6 +154,9 @@
                 height="294"
                 class="about-img"
               />
+              <div class="about-list--tumb">
+                <h3 class="about__list--title">Мобильные приложения</h3>
+              </div>
             </li>
             <li class="about__item">
               <img
@@ -161,6 +166,9 @@
                 height="294"
                 class="about-img"
               />
+              <div class="about-list--tumb">
+                <h3 class="about__list--title">Дизайнерские решения</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -170,13 +178,24 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./images/main-page/our-team-1.jpg"
-                alt="Фото Игоря Демьяненко"
-                width="270"
-                height="260"
-                class="team__img"
-              />
+              <div class="team__scene">
+                <div class="team__card">
+                  <img
+                    src="./images/main-page/our-team-1.jpg"
+                    alt="Фото Игоря Демьяненко"
+                    width="270"
+                    height="260"
+                    class="team__img team__cadr-face team__card-face--front"
+                  />
+                  <div class="team__cadr-face team__card-face--back">
+                    <h3 class="team__cadr-face--back-title">Индивидуальный подход</h3>
+                    <p class="team__cadr-face--back-text">
+                      Создание бренда, разработка названия и слогана, маркетинговые исследования,
+                      позиционирование бренда, разработка маркетинговой стратегии.
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div class="team__item-box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p lang="eu" class="team__text">Product Designer</p>
@@ -213,13 +232,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/main-page/our-team-2.jpg"
-                alt="Фото Ольги Репиной"
-                width="270"
-                height="260"
-                class="team__img"
-              />
+              <div class="team__scene">
+                <div class="team__card">
+                  <img
+                    src="./images/main-page/our-team-2.jpg"
+                    alt="Фото Ольги Репиной"
+                    width="270"
+                    height="260"
+                    class="team__img team__cadr-face team__card-face--front"
+                  />
+                  <div class="team__cadr-face team__card-face--back">
+                    <h3 class="team__cadr-face--back-title">Современные технологии</h3>
+                    <p class="team__cadr-face--back-text">
+                      Разработка сайтов (лендинги, сайты-визитки, корпоративные сайты,
+                      интернет-магазины, web-порталы, промо-сайты, каталоги, высоконагруженные
+                      площадки).
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div class="team__item-box">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p lang="eu" class="team__text">Frontend Developer</p>
@@ -256,13 +287,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/main-page/our-team-3.jpg"
-                alt="Фото Николая Тарасова"
-                width="270"
-                height="260"
-                class="team__img"
-              />
+              <div class="team__scene">
+                <div class="team__card">
+                  <img
+                    src="./images/main-page/our-team-3.jpg"
+                    alt="Фото Николая Тарасова"
+                    width="270"
+                    height="260"
+                    class="team__img team__cadr-face team__card-face--front"
+                  />
+                  <div class="team__cadr-face team__card-face--back">
+                    <h3 class="team__cadr-face--back-title">Рекламные коммуникации</h3>
+                    <p class="team__cadr-face--back-text">
+                      Настройка контекстной рекламы Google Adwords, ремаркетинг, SEO-оптимизация,
+                      настройка SMM (Facebook, Instagram), реклама в YouTube, рассылка в Viber и
+                      т.д.
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div class="team__item-box">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p lang="eu" class="team__text">Marketing</p>
@@ -299,13 +342,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/main-page/our-team-4.jpg"
-                alt="Фото Михаила Ермакова"
-                width="270"
-                height="260"
-                class="team__img"
-              />
+              <div class="team__scene">
+                <div class="team__card">
+                  <img
+                    src="./images/main-page/our-team-4.jpg"
+                    alt="Фото Михаила Ермакова"
+                    width="270"
+                    height="260"
+                    class="team__img team__cadr-face team__card-face--front"
+                  />
+                  <div class="team__cadr-face team__card-face--back">
+                    <h3 class="team__cadr-face--back-title">Все краски мира</h3>
+                    <p class="team__cadr-face--back-text">
+                      Графический дизайн, разработка логотипов, фирменного стиля, дизайн упаковок,
+                      визиток, листовок, постеров, бордов, календарей, выставочных стендов,
+                      рекламных баннеров и т.д.
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div class="team__item-box">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p lang="eu" class="team__text">UI Designer</p>
